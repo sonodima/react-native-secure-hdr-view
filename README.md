@@ -1,6 +1,14 @@
 ![React Native SecureHDRView](.github/banner.webp)
 
+<p align="center">
+  <a href="https://github.com/sonodima/react-native-secure-hdr-view/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/sonodima/react-native-secure-hdr-view/ci.yml?branch=main&amp;event=push&amp;style=for-the-badge&amp;label=CI" alt="CI" /></a>
+  <a href="https://www.npmjs.com/package/react-native-secure-hdr-view"><img src="https://img.shields.io/npm/v/react-native-secure-hdr-view?style=for-the-badge" alt="npm version" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License: MIT" /></a>
+</p>
+
+<p align="center">
 A React Native view that can hide its content from screenshots and screen recordings, and show it in HDR.
+</p>
 
 ```tsx
 import { SecureHDRView } from 'react-native-secure-hdr-view';
