@@ -106,8 +106,7 @@ using namespace facebook::react;
   [CATransaction setDisableActions:YES];
   _hdr.hidden = intensity <= 0;
   if (@available(iOS 26.0, *)) {
-    UIColor *white = [UIColor colorWithRed:1 green:1 blue:1 alpha:1 exposure:stops];
-    _hdr.backgroundColor = [white colorByApplyingContentHeadroom:_headroom].CGColor;
+    _hdr.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1 exposure:stops].CGColor;
   } else {
     CGFloat gain = exp2(stops);
     CGColorSpaceRef space = CGColorSpaceCreateWithName(kCGColorSpaceExtendedLinearSRGB);
