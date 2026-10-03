@@ -1,4 +1,4 @@
-# React Native SecureHDRView 🔭
+![React Native SecureHDRView](.github/banner.webp)
 
 A React Native view that can hide its content from screenshots and screen recordings, and show it in HDR.
 
