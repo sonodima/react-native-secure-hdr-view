@@ -1,0 +1,80 @@
+{
+  "name": "react-native-secure-hdr-view",
+  "version": "0.1.0",
+  "description": "A React Native view that keeps its content out of screenshots and screen recordings, and shows it in HDR.",
+  "keywords": [
+    "react-native",
+    "expo",
+    "hdr",
+    "screenshot",
+    "screen-recording",
+    "protection"
+  ],
+  "license": "MIT",
+  "author": "Tommaso Dimatore <sonodimaa@icloud.com>",
+  "repository": "github:sonodima/react-native-secure-hdr-view",
+  "packageManager": "pnpm@10.34.5",
+  "main": "./lib/module/index.js",
+  "types": "./lib/typescript/src/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.tsx",
+      "types": "./lib/typescript/src/index.d.ts",
+      "default": "./lib/module/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "lib",
+    "ios",
+    "android",
+    "!android/build",
+    "*.podspec"
+  ],
+  "scripts": {
+    "prepare": "bob build",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.77.0"
+  },
+  "devDependencies": {
+    "@react-native/typescript-config": "0.86.3",
+    "@types/react": "~19.2.2",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-builder-bob": "^0.43.1",
+    "typescript": "~6.0.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "module",
+        {
+          "esm": true
+        }
+      ],
+      "typescript"
+    ]
+  },
+  "codegenConfig": {
+    "name": "SecureHDRViewSpec",
+    "type": "components",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.sonodima.securehdrview"
+    },
+    "ios": {
+      "componentProvider": {
+        "RNSecureHDRView": "RNSecureHDRView"
+      }
+    }
+  }
+}

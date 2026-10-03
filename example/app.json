@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "SecureHDRView",
+    "slug": "secure-hdr-view-example",
+    "ios": {
+      "bundleIdentifier": "com.sonodima.securehdrview.example"
+    },
+    "android": {
+      "package": "com.sonodima.securehdrview.example"
+    }
+  }
+}

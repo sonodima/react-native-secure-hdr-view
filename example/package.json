@@ -1,0 +1,21 @@
+{
+  "name": "secure-hdr-view-example",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "ios": "expo run:ios",
+    "android": "expo run:android"
+  },
+  "dependencies": {
+    "@react-native-community/slider": "5.2.0",
+    "expo": "~57.0.26",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-secure-hdr-view": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "react-native-monorepo-config": "^0.4.0",
+    "typescript": "~6.0.3"
+  }
+}
